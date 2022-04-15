@@ -126,9 +126,6 @@ padding:0 0.5rem;
 background-color: #f1a33e;
 height:2rem;
 width:2.5rem;
-/* border-radius:5px;
-position:absolute;
-left:88%; */
 padding:0.3rem;
 }
 
@@ -812,12 +809,18 @@ background-size: cover;
   top:0;
   z-index:999;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
   width:100vw;
   height:max-content;
   min-height:100vh;
+
+}
+
+.top-account-section-container{
+  height:max-content;
+  min-height:60vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .form{
@@ -888,17 +891,15 @@ font-size: 0.9rem;
 }
 
 .account-footer{
-  position:absolute;
-  bottom:0;
   width:100vw;
-  height:25vh;
+  height:40vh;
   display: flex;
   flex-direction: column;
   background-color: #f8f7f7;
   align-items: center;
-  margin-top:1rem;
   font-size: 0.75rem;
   padding:2rem 0;
+  margin-top:2rem;
 
 }
 
@@ -1024,9 +1025,12 @@ width:100%;
     display: none;
   }
 
+ 
+
 }
 
 @media(min-width:705px){
+ 
   .product-display-container{
     width:22rem;
     margin:1rem;
@@ -1173,6 +1177,8 @@ display: block;
 }
 
 @media(min-width:1000px){
+ 
+
   .top-navbar-container{
     height:3rem;
   }
@@ -1213,7 +1219,7 @@ height:50vh;
    
   }
 
-  @media(min-width:1500px){
+  @media(min-width:2000px){
     .form{
       max-width:50rem;
     }

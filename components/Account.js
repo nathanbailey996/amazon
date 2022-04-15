@@ -3,6 +3,7 @@ import { useState } from "react"
 import AccountFooter from "./AccountFooter.js"
 import { useRouter } from "next/router"
 import {  auth} from "./firebase"
+
 // import Image from "next/image"
 
 
@@ -28,6 +29,7 @@ function handleSubmit (e){
 
     return(
         <div className="account-section">
+            <div className="top-account-section-container">
             {/* <Image 
             src="/account-amazon-logo-image.png"
             className="account-img"
@@ -72,9 +74,10 @@ function handleSubmit (e){
 <Link href="/create-account"><button className="basket-btn account-btn" style={{width:"90%", borderRadius:"5px", backgroundColor:"rgb(225, 220, 220)", border:"solid grey 1px"}}>Create your Amazon account</button></Link>
 
 </div>
-<div style={{height:"15rem"}}></div>
+</div>
+
 <AccountFooter key={Math.random()}/>
-            
+
         </div>
     ) 
 }

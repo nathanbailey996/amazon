@@ -40,6 +40,7 @@ if(auth){
 
     return(
         <div className="account-section">
+            <div className="top-account-section-container">
           <img src="/account-amazon-logo-image.png" alt="" className="account-img" style={{marginTop:"1rem"}} onClick={handleRedirect}/>
             <form className="form" onSubmit={handleSubmit}>
                 <legend>Create Account</legend>
@@ -78,6 +79,7 @@ if(auth){
 <div className="new-account-container">
 <Link href="/sign-in"><button className="basket-btn" style={{width:"90%",maxWidth:"30rem", borderRadius:"5px", backgroundColor:"rgb(225, 220, 220)", border:"solid grey 1px"}}>Sign in</button></Link>
 
+</div>
 </div>
 <AccountFooter key={Math.random()}/>
             

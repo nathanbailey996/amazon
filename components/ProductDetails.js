@@ -16,7 +16,7 @@ router.push("/cart")
         <div className="product-details-container">
             <div className="product-details-left-content-container" style={{width:"max-content"}}>
             <div className="title-container" >
-                <h6 className="product-details-title">{props.details.title}</h6>
+                <h6 style={{maxWidth:"90vw"}} className="product-details-title">{props.details.title}</h6>
                 <div className="reviews" style={{display:"flex"}}>{props.details.reviews.map(star=>{
                     return <p key={Math.random()}>⭐</p>
                 })}

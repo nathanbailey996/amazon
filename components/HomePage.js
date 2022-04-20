@@ -52,9 +52,9 @@ function HomePage(props){
            <ProductDisplayContainer 
         key={Math.random()}
            title="Men's activewear and outerwear"
-          image1="/pants.png"
-          image2="/coat.png"
-          image3="/shorts.png"
+          image1="/trousers-details.png"
+          image2="/coat-details.png"
+          image3="/shorts-details.png"
           image4="/gloves.png"
           id1="70927845"
           id2="10055109"
@@ -77,14 +77,7 @@ function HomePage(props){
           id3="78781"
           id4="87654"
            />
-           {/* <ProductDisplayContainer 
-           title="Echo Accessories"
-           image1="/echo-screen.png"
-           image2="/echo-holder.png"
-           image3="/echo-time-screen.png"
-           image4="/echo-case.png"
-           /> */}
-           {/* <Image image="/amazon-music.png"/> */}
+           
            <ProductDisplayContainer 
         key={Math.random()}
         title="Discover the Smart Home selection"

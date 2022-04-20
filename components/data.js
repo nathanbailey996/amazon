@@ -23,8 +23,8 @@ export default {data:[
         id:9986, 
         image:"/alexa.png", 
         detailsImage:"/echo-dot-details-image.png",
-        detailImages:[{address:"/echo-dot-details-image.png", id:1},{address:"/echo-dot-details-img-1.png", id:2},{address:"/echo-dot-details-img-2.png", id:3},{address:"/echo-dot-details-img-3.png", id:4}
-        ,{address:"/echo-dot-details-img-4.png", id:5},{address:"/echo-dot-details-img-5.png", id:6},],
+        detailImages:[{address:"/echo-dot-details-image.png", id:1},{address:"/echo-dot-details-img-2.png", id:2},{address:"/echo-dot-details-img-3.png", id:3}
+        ,{address:"/echo-dot-details-img-4.png", id:4},{address:"/echo-dot-details-img-5.png", id:5},],
         reviews:[4,4,4,4,4], 
         reviewsAmount:"181,207", 
         firstPrice:"49", 
@@ -39,8 +39,7 @@ export default {data:[
         description:[`7" IPS display, 16 or 32 GB of internal storage (up to 512 GB of expandable storage with microSD).`, "Faster 1.3 GHz quad-core processor and 1 GB of RAM.", "Up to 7 hours of reading, surfing the web, watching video and listening to music.", "Enjoy your favourite apps like BBC iPlayer, Netflix, Disney+, Facebook, Instagram, TikTok, YouTube and more through the Amazon Appstore (Google Play Store not supported). Subscription fees may apply.", "Now hands free with Alexa.", "2 MP rear-facing camera and HD 720p front-facing camera."],
         id:24665,
         image:"/fire-tablet.png",
-        detailImages:[{address:"/fire-tabet-details-img-1.png", id:1},{address:"/fire-tabet-details-img-2.png", id:2},{address:"/fire-tabet-details-img-3.png", id:3},{address:"/fire-tabet-details-img-4.png", id:4}
-        ,{address:"/fire-tabet-details-img-5.png", id:5}],
+        detailImages:[{address:"/fire-tabet-details-img-1.png", id:1},{address:"/fire-tabet-details-img-2.png", id:2},{address:"/fire-tabet-details-img-3.png", id:3},{address:"/fire-tabet-details-img-4.png", id:4}],
         reviews:[4,4,4,4,4], 
         reviewsAmount:"75,548", 
         firstPrice:"49", 
@@ -87,8 +86,7 @@ export default {data:[
         id:34522,
         image:"/echo-show-5.png", 
         detailImages:[{address:"/echo-show-5-details-img-1.png", id:1},{address:"/echo-show-5-details-img-2.png", id:2},{address:"/echo-show-5-details-img-3.png", id:3}
-        ,{address:"/echo-show-5-details-img-4.png", id:4},{address:"/echo-show-5-details-img-5.png", id:5},{address:"/echo-show-5-details-img-6.png", id:6}, {address:"/echo-show-5-details.png", id:7} ],
-        detailsImage:"/echo-show-5-details.png",
+        ,{address:"/echo-show-5-details-img-4.png", id:4},{address:"/echo-show-5-details-img-5.png", id:5},{address:"/echo-show-5-details-img-6.png", id:6},  ],
         reviews:[4,4,4,4,4], 
         reviewsAmount:"16,708", 
         firstPrice:"74", 
@@ -104,7 +102,7 @@ export default {data:[
         id:87654,
         image:"/ring.png", 
         detailImages:[{address:"/ring-details-image.png", id:1},{address:"/ring-details-img-1.png", id:2},{address:"/ring-details-img-2.png", id:3}
-        ,{address:"/ring-details-img-3.png", id:4},{address:"/ring-details-img-4.png", id:5},{address:"/ring-details-img-5.png", id:6}, {address:"/ring-details-img-6.png", id:7} ],
+        ,{address:"/ring-details-img-3.png", id:4},{address:"/ring-details-img-4.png", id:5},{address:"/ring-details-img-5.png", id:6} ],
         detailsImage:"/ring-details-image.png",
         reviews:[4,4,4,4,4], 
         reviewsAmount:"41,180", 
@@ -122,7 +120,7 @@ export default {data:[
         id:77543,
         image:"/oral-b.png", 
         detailImages:[{address:"/oral-b-details-img-1.png", id:1},{address:"/oral-b-details-img-2.png", id:2},{address:"/oral-b-details-img-3.png", id:3}
-        ,{address:"/oral-b-details-img-4.png", id:4},{address:"/oral-b-details-img-5.png", id:5}, {address:"/oral-b.png", id:6} ],
+        ,{address:"/oral-b-details-img-5.png", id:4}, {address:"/oral-b.png", id:5} ],
         reviews:[4,4,4,4], 
         reviewsAmount:"6,605", 
         firstPrice:"24", 
@@ -137,7 +135,7 @@ export default {data:[
         id:987764563,
         image:"/aonic-earbuds.png", 
         detailImages:[{address:"/aonic-earbuds.png", id:1},{address:"/shure-earbuds-details-img-1.png", id:2},{address:"/shure-earbuds-details-img-2.png", id:3}
-        ,{address:"/shure-earbuds-details-img-3.png", id:4},{address:"/shure-earbuds-details-img-4.png", id:5}, {address:"/shure-earbuds-details-img-5.png", id:6},{address:"/shure-earbuds-details-img-6.png", id:7} ],
+        ,{address:"/shure-earbuds-details-img-3.png", id:4},{address:"/shure-earbuds-details-img-4.png", id:5}],
         reviews:[4,4,4,4], 
         reviewsAmount:"39", 
         firstPrice:"151", 
@@ -168,7 +166,7 @@ export default {data:[
         id:7797344,
         image:"/shorts-details.png",
         detailImages:[{address:"/shorts-details.png", id:1},{address:"/shorts-details-img-1.png", id:2},{address:"/shorts-details-img-2.png", id:3}
-        ,{address:"/shorts-details-img-3.png", id:4},{address:"/shorts-details-img-4.png", id:5},{address:"/shorts-details-img-5.png", id:6}],
+        ,{address:"/shorts-details-img-3.png", id:4},{address:"/shorts-details-img-4.png", id:5}],
         detailsImage:"/shorts-details.png" ,
         reviews:[4,4,4,4,4], 
         reviewsAmount:"6,263", 
@@ -199,7 +197,7 @@ export default {data:[
         id:70927845,
         image:"/trousers-details.png",
         detailImages:[{address:"/trousers-details.png", id:1},{address:"/trousers-details-img-1.png", id:2},{address:"/trousers-details-img-2.png", id:3}
-        ,{address:"/trousers-details-img-3.png", id:4},{address:"/trousers-details-img-4.png", id:5}, {address:"/trousers-details-img-5.png", id:6} ],
+        ,{address:"/trousers-details-img-3.png", id:4},{address:"/trousers-details-img-4.png", id:5} ],
         detailsImage:"/trousers-details.png" ,
         reviews:[4,4,4,4], 
         reviewsAmount:"8,938", 

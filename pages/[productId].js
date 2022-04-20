@@ -25,6 +25,7 @@ function ProductDetails (props){
 
     return{
         props:{
+            fallback:false, 
            productDetail:currentProduct[0]
         }, revalidate:1, 
     }

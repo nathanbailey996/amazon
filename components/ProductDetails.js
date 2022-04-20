@@ -1,9 +1,21 @@
 import Link from "next/link"
 import { appContext } from "../pages/_app"
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { useRouter } from "next/router"
+import DetailImageCircle from "./DetailImageCircle"
+import ProductDetailsSmallImage from "./ProductDetailsSmallImage"
+import MobileImageSlider from "./MobileImageSlider"
 
 function ProductDetails (props){
+const [touchStartPosition, setTouchStartPosition] = useState('')
+const [imageNumber, setImageNumber] = useState(1)
+
+
+useEffect(()=>{
+    window.addEventListener("dragstart", (e)=>e.preventDefault())
+    window.addEventListener("touchstart", (event)=> setTouchStartPosition(event.touches[0].pageX))
+})
+
     const router = useRouter()
 const productDetailsContext = useContext(appContext)
 
@@ -12,6 +24,38 @@ const addToBasketHandler = (id)=>{
     productDetailsContext.dispatch({type:"getTotalPrice"})
 router.push("/cart")
 }
+
+const NextImageHandler = ()=>{
+    if(imageNumber < props.details.detailImages.length){
+        setImageNumber(imageNumber +1)
+    }}
+
+    const previousImageHandler = ()=>{
+        if(imageNumber > 1){
+            setImageNumber(imageNumber -1)
+
+        }
+    }
+
+
+const handleTouch = (event)=>{
+    const currentTouchPosition = event.touches[0].pageX
+     currentTouchPosition > touchStartPosition? NextImageHandler(): previousImageHandler()
+
+
+}
+
+const mainImage = props.details.detailImages.map(image=>{
+   return image.id === imageNumber? <img src={image.address} alt="" onTouchMove={handleTouch}/>: ""
+})
+const ImageSlider = props.details.detailImages.map(image=>{
+    return <ProductDetailsSmallImage address={image.address} id={image.id} setImageNumber={setImageNumber}/>
+})
+
+
+
+
+
     return(
         <div className="product-details-container">
             <div className="product-details-left-content-container" style={{width:"max-content"}}>
@@ -27,10 +71,20 @@ router.push("/cart")
 </div>
 
 <div className="product-details-img-container" >
-    <div className="product__image__container">
-<img src={props.details.detailsImage? props.details.detailsImage:  props.details.image} alt=""/>
+<div className="small-images-container">
+    {ImageSlider}
 </div>
 
+    <div className="product__image__container" >
+{/* <img src={props.details.detailsImage? props.details.detailsImage:  props.details.image} alt=""/> */}
+{mainImage}
+
+</div>
+<div className="mobile-image-slider" >
+{props.details.detailImages.map(image=>{
+  return  <DetailImageCircle imageNumber={imageNumber} id={image.id} setImageNumber={setImageNumber}/>
+})}
+</div>
 </div>
 </div>
 

@@ -4,7 +4,6 @@ import AccountFooter from "./AccountFooter.js"
 import { useRouter } from "next/router"
 import {  auth} from "./firebase"
 
-// import Image from "next/image"
 
 
 function Account (){
@@ -30,15 +29,6 @@ function handleSubmit (e){
     return(
         <div className="account-section">
             <div className="top-account-section-container">
-            {/* <Image 
-            src="/account-amazon-logo-image.png"
-            className="account-img"
-            width={200}
-            height={75}
-            style={{marginTop:"1rem"}} 
-            onClick={handleRidirect}
-            alt=""
-            /> */}
           <img src="/account-amazon-logo-image.png" className="account-img" style={{marginTop:"1rem"}} onClick={handleRidirect}/>
             <form className="form" onSubmit={handleSubmit}>
                 <legend>Sign In</legend>

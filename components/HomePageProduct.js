@@ -1,4 +1,3 @@
-// import Home from "../pages"
 import Reviews from "./Reviews"
  import { useRouter } from "next/router"
 

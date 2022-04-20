@@ -40,7 +40,7 @@ const NextImageHandler = ()=>{
 
 const handleTouch = (event)=>{
     const currentTouchPosition = event.touches[0].pageX
-     currentTouchPosition > touchStartPosition? NextImageHandler(): previousImageHandler()
+     currentTouchPosition > touchStartPosition?  previousImageHandler(): NextImageHandler()
 
 
 }
@@ -76,7 +76,6 @@ const ImageSlider = props.details.detailImages.map(image=>{
 </div>
 
     <div className="product__image__container" >
-{/* <img src={props.details.detailsImage? props.details.detailsImage:  props.details.image} alt=""/> */}
 {mainImage}
 
 </div>

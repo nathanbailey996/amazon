@@ -6,7 +6,7 @@ import Link from "next/link"
 
  function HamburgerMenu (props){
 const showMenu = {
-    transform: props.isMenuOpen? "" : "translateX(-2000px)"
+    transform: props.isMenuOpen? "" : "translateX(-5000px)"
 }
 
      return(

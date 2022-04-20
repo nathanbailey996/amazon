@@ -74,12 +74,7 @@ return {...state, savedForLater:newSavedArray,}
 
     return state
   }
-// const storedData = JSON.parse(localStorage.getItem("product-data")) 
-// let storedProductData 
-// if (typeof window !== "undefined") {
-// storedProductData = JSON.parse(localStorage.getItem("product-data"))
-//   }
-// console.log(storedProductData)
+
 
 const defaultData = {
     productData:productData.data, 

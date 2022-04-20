@@ -1,18 +1,14 @@
 import { RiDeleteBin7Line } from "react-icons/ri"
 import { HiPlus } from "react-icons/hi"
 import Link from "next/link"
-import { useRouter } from "next/router"
 import { useContext } from 'react'
 import { appContext} from "../pages/_app"
 
 function CartItem (props){
     const cartContext = useContext(appContext)
 
-const router = useRouter()
 
-const showDetailsHandler = ()=>{
-    // router.push("/" + props.id)
-}
+
 
 
 

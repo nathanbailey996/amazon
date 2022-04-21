@@ -19,7 +19,7 @@ cartContext.dispatch({type:"getTotalPrice"})
 
     return(
         <div className="cart-item-section-container">
-        <div className="cart-item-container" onClick={showDetailsHandler}>
+        <div className="cart-item-container" >
             <div className="cart-item-upper-section-container">
             <div className="cart-item-img-container">
             <img src={props.image} alt="product" />

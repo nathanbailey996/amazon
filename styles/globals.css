@@ -282,7 +282,6 @@ align-items: center;
 .home-img{
   width:100vw;
   max-width:90rem;
-  height:20vh;
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -1225,14 +1224,20 @@ display: block;
 
   @media(min-width:1150px){
     .home-img{
-height:50vh;
     }
 
+    .top-navbar-container{
+      height:3.4rem;
+    }
     
    
   }
 
   @media(min-width:2000px){
+    .top-navbar-container{
+      height:4rem;
+    }
+
     .form{
       max-width:50rem;
     }
